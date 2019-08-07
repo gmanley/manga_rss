@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
+
+bundle install
+createdb "manga_rss_${RACK_ENV:-development}"
+rake db:migrate

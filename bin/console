@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../lib/scrutinator/boot', __dir__)
+
+require 'pry'
+Scrutinator.setup
+Pry.start
