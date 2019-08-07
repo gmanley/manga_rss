@@ -61,8 +61,8 @@ module MangaRSS
     path = File.join(root, 'lib')
     $LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
 
-    require 'app'
-    require 'providers/bato'
-    require 'providers'
+    require 'manga_rss/app'
+    require 'manga_rss/providers/bato'
+    require 'manga_rss/providers'
   end
 end

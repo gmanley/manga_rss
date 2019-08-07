@@ -7,6 +7,8 @@ gem 'roda', '~> 3.22'
 gem 'dotenv', '~> 2.7'
 gem 'puma', '~> 4.0'
 gem 'pry', '~> 0.12'
+gem 'http'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'rerun', '~> 0.13'
