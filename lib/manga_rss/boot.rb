@@ -62,6 +62,13 @@ module MangaRSS
     $LOAD_PATH.unshift(path) unless $LOAD_PATH.include?(path)
 
     require 'manga_rss/app'
+
+    require 'manga_rss/entities/entity'
+    require 'manga_rss/entities/title'
+    require 'manga_rss/entities/chapter'
+
+    require 'manga_rss/rss_emitter'
+
     require 'manga_rss/providers/bato'
     require 'manga_rss/providers'
   end

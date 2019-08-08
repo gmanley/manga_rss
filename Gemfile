@@ -9,6 +9,8 @@ gem 'puma', '~> 4.0'
 gem 'pry', '~> 0.12'
 gem 'http'
 gem 'nokogiri'
+gem 'dry-struct'
+gem 'chronic'
 
 group :development, :test do
   gem 'rerun', '~> 0.13'

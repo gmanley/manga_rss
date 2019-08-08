@@ -13,7 +13,14 @@ module MangaRSS
         @provider = Providers[provider]
 
         r.is String do |external_id|
-          @provider.new(external_id).call
+          result = @provider.new(external_id).call
+
+          if result.success
+            response['Content-Type'] = 'application/atom+xml'
+            RSSEmitter.new(result.title, result.chapters).perform.to_s
+          else
+            halt 500
+          end
         end
       end
     end
