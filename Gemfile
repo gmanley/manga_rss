@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 
 gem 'roda', '~> 3.22'
 gem 'dotenv', '~> 2.7'
-gem 'puma', '~> 4.0'
+gem 'puma', '~> 4.3'
 gem 'pry', '~> 0.12'
 gem 'http'
 gem 'nokogiri'
